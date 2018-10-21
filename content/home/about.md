@@ -30,8 +30,6 @@ weight = 5
  
 +++
 
-# Biography
-
 I am a lecturer at the Department of Theoretical and Applied Linguistics at Lomonosov Moscow State University, and a research fellow at the Department of Typology at the Institute of Linguistics of the Russian Academy of Sciences.
 
 My research interests include Iranian and Nakh-Daghestanian languages (especially Ossetic and Shiri Dargwa), syntax and semantics of clause combining (coordination vs. subordination, correlatives, converbs), typology and theory of morphological case systems, and formal grammars (especially Lexical Functional Grammar).
