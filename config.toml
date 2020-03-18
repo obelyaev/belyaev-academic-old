@@ -6,7 +6,7 @@
 
 # The URL of your website.
 # End your URL with a `/` trailing slash, e.g. `https://example.com/`.
-baseurl = "/"
+baseurl = "http://ossetic-studies.org/obelyaev/"
 
 # Title of your site
 title = "Oleg Belyaev"
@@ -52,17 +52,17 @@ enableGitInfo = false
 
   # Your details.
   name = "Oleg Belyaev"
-  role = "Lecturer"
+  role = "Linguist"
 
   # Organizations/Affiliations.
   #   Separate multiple entries with a comma, using the form: `[ {name="Org1", url=""}, {name="Org2", url=""} ]`.
-  organizations = [ { name = "Lomonosov Moscow State University", url = "http://tipl.philol.msu.ru/" } ]
+  organizations = [ { name = "Lomonosov Moscow State University", url = "http://tipl.philol.msu.ru/" }, { name = "Institute of Linguistics RAS", url = "http://iling-ran.ru/" }]
 
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
   avatar = "profile.png"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
 
   # Details for the Contact Widget
-  email = "obelyaev@gmail.com"
+  email = "belyaev@ossetic-studies.org"
   address = "Moscow, Russia"
   #office_hours = "Monday 10:00 to 13:00 or email for appointment"
   #phone = "888 888 88 88"
@@ -191,7 +191,7 @@ enableGitInfo = false
     'Conference paper',  # 1
     'Journal article',  # 2
     'Manuscript',  # 3
-    'Report',  # 4
+    'Thesis',  # 4
     'Book',  # 5
     'Book section'  # 6
   ]
@@ -205,7 +205,7 @@ enableGitInfo = false
   [params.publications]
     # Date format (refer to https://sourcethemes.com/academic/docs/customization/#date-format )
     #   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
-    date_format = "January, 2006"
+    date_format = "2006"
 
   # Configuration of project pages.
   [params.projects]
@@ -255,6 +255,11 @@ enableGitInfo = false
     link = "https://scholar.google.com/citations?user=hczyu0sAAAAJ"
 
   [[params.social]]
+    icon = "facebook"
+    icon_pack = "fab"
+    link = "https://www.facebook.com/obelyaev"
+
+  [[params.social]]
     icon = "github"
     icon_pack = "fab"
     link = "//github.com/obelyaev"
@@ -281,12 +286,12 @@ enableGitInfo = false
 
 [[menu.main]]
   name = "Publications"
-  url = "publications"
+  url = "#publications"
   weight = 2
-  
+
 [[menu.main]]
   name = "Talks"
-  url = "talks"
+  url = "#talks"
   weight = 3
 
 # Link to a PDF of your resume/CV from the menu.
@@ -325,6 +330,43 @@ enableGitInfo = false
 # Configure the English version of the website.
 [languages.en]
   languageCode = "en-us"
+
+[languages.ru]
+  languageCode = "ru-ru"
+  title = "О.И. Беляев"
+
+  [languages.ru.params]
+    name = "Олег Игоревич Беляев"
+    role = "Лингвист"
+    organizations = [ { name = "МГУ имени М.В. Ломоносова", url = "http://tipl.philol.msu.ru/" }, { name = "Институт языкознания РАН", url = "http://iling-ran.ru"} ]
+    email = "obelyaev@gmail.com"
+    address = "Москва"
+    publication_types = [
+    'Без категории',  # 0
+    'Статья в сборнике конференции',  # 1
+    'Статья в журнале',  # 2
+    'Рукопись',  # 3
+    'Диссертация',  # 4
+    'Книга',  # 5
+    'Глава в книге'  # 6
+  ]
+
+
+  [[languages.ru.menu.main]]
+    name = "О себе"
+    url = "#about"
+    weight = 1
+
+  [[languages.ru.menu.main]]
+    name = "Публикации"
+    url = "#publications"
+    weight = 2
+
+  [[languages.ru.menu.main]]
+    name = "Доклады"
+    url = "#talks"
+    weight = 3
+
 
 # Uncomment the lines below to configure your website in a second language.
 #[languages.zh]
